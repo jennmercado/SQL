@@ -1,0 +1,15 @@
+create table store (id integer primary key, name text, price integer, sold integer);
+
+insert into store values (1, "shirts", 12, 10);
+insert into store values (2, "shorts", 20, 5);
+insert into store values (3, "croptops", 15, 25);
+insert into store values (4, "sandals", 25, 9);
+insert into store values (5, "sunglasses", 10, 30);
+Select * From store;
+
+
+
+--displayed the database that sold the most 
+Select * From store
+Where sold >=5
+Order By sold desc; 
